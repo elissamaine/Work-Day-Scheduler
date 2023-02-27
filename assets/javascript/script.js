@@ -1,12 +1,9 @@
-var rootEl = $('#root');
-var textInputEl = $('.description');
-var currentTime = dayjs().format('H');
-console.log(currentTime);
-
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(document).ready(function() {
+    var currentTime = dayjs().format('H');
+    console.log(currentTime);
 
     $(function () {
         // click event listener added to the save buttons so that when it is clicked the 
